@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baaec359-ea96-483c-a0b6-74f7ad483572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbagsA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="baaec359-ea96-483c-a0b6-74f7ad483572" name="Changes" comment="a little change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +62,26 @@
       <updated>1696768527789</updated>
       <workItem from="1696768528926" duration="2051000" />
       <workItem from="1696770890244" duration="2093000" />
-      <workItem from="1696773016603" duration="10279000" />
+      <workItem from="1696773016603" duration="10959000" />
+      <workItem from="1696866101305" duration="49000" />
     </task>
+    <task id="LOCAL-00001" summary="ex 15 - sandbags. PART1">
+      <created>1696784877856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696784877856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ex 15 - sandbags. PART1" />
+    <MESSAGE value="a little change" />
+    <option name="LAST_COMMIT_MESSAGE" value="a little change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

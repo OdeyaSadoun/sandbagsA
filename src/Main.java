@@ -1,4 +1,4 @@
-// Odeya Sadoun 212380406
+// Odeya Sadoun 212380406 | Part 1
 import java.util.Scanner;
 
 public class Main {
@@ -78,7 +78,6 @@ public class Main {
 
   //Help function to know which player is and return his x location
   private static int xLocationByPlayer(String player) {
-
     if (player == PLAYER_1_NAME) {
       return playerALocationX;
     }
@@ -87,9 +86,7 @@ public class Main {
   }
 
   //Help function to know which player is and return his y location
-
   private static int yLocationByPlayer(String player) {
-
     if (player == PLAYER_1_NAME) {
       return playerALocationY;
     }
@@ -182,7 +179,6 @@ public class Main {
   }
 
   private static boolean didPlayerWin(int playerXloc, int playerYloc) {
-
     if (playerXloc >= winnersCarpetLocationX
         && playerXloc < winnersCarpetLocationX + winnersCarpetSideSize
         && playerYloc >= winnersCarpetLocationY
