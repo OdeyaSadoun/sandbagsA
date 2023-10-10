@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baaec359-ea96-483c-a0b6-74f7ad483572" name="Changes" comment="a little change">
+    <list default="true" id="baaec359-ea96-483c-a0b6-74f7ad483572" name="Changes" comment="change == to equal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -65,7 +65,8 @@
       <workItem from="1696773016603" duration="10959000" />
       <workItem from="1696866101305" duration="237000" />
       <workItem from="1696866798647" duration="625000" />
-      <workItem from="1696945915809" duration="778000" />
+      <workItem from="1696945915809" duration="1053000" />
+      <workItem from="1696956354600" duration="1807000" />
     </task>
     <task id="LOCAL-00001" summary="ex 15 - sandbags. PART1">
       <created>1696784877856</created>
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696866160171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change == to equal">
+      <created>1696946859099</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696946859099</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +98,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ex 15 - sandbags. PART1" />
     <MESSAGE value="a little change" />
-    <option name="LAST_COMMIT_MESSAGE" value="a little change" />
+    <MESSAGE value="change == to equal" />
+    <option name="LAST_COMMIT_MESSAGE" value="change == to equal" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

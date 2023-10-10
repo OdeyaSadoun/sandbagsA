@@ -51,7 +51,6 @@ public class Main {
     winnersCarpetSideSize = input.nextInt();
   }
 
-
   private static void printBoard() {
     for (int row = 0; row < BOARD_SIZE + 2; row++) {
 
@@ -77,7 +76,7 @@ public class Main {
     }
   }
 
-  //Help function to know which player is and return his x location
+  // Help function to know which player is and return his x location
   private static int xLocationByPlayer(String player) {
     if (player.equals(PLAYER_1_NAME)) {
       return playerALocationX;
@@ -86,7 +85,7 @@ public class Main {
     return playerBLocationX;
   }
 
-  //Help function to know which player is and return his y location
+  // Help function to know which player is and return his y location
   private static int yLocationByPlayer(String player) {
     if (player.equals(PLAYER_1_NAME)) {
       return playerALocationY;
@@ -97,7 +96,19 @@ public class Main {
 
   private static void makeTurn(String player) {
     int move = getMoveDirection(player);
-    boolean legalStep = isMovingTowardsBorder(xLocationByPlayer(player), yLocationByPlayer(player), move);
+    /*
+     * clarification:
+     * In the case of input that is not correct - not 1-4,
+     * the input will go through a function that checks the progress and checks if you exit the board,
+     * of course such a situation will not happen because the value is not 1-4,
+     * so we will reach default where we will print the desired error note,
+     * but we will return with a value of true From the function that supposedly expresses a legal step,
+     * in practice - in the game process itself there are only 4 options 1-4,
+     * therefore the value that will be entered if it is not correct will not do anything -
+     * and will only print the board, which is exactly the requested requirement.
+     * */
+    boolean legalStep =
+        isMovingTowardsBorder(xLocationByPlayer(player), yLocationByPlayer(player), move);
 
     if (legalStep) {
       movePlayer(player, move);
@@ -120,6 +131,7 @@ public class Main {
     return input.nextInt();
   }
 
+  // A function to check if the step is legal or not. if legal, not go the border: return true, else, illegal step: return false
   private static boolean isMovingTowardsBorder(int playerXloc, int playerYloc, int playerMovement) {
     final int UP = 1;
     final int DOWN = 2;
@@ -180,8 +192,8 @@ public class Main {
 
   private static boolean didPlayerWin(int playerXloc, int playerYloc) {
     return playerXloc >= winnersCarpetLocationX
-            && playerXloc < winnersCarpetLocationX + winnersCarpetSideSize
-            && playerYloc >= winnersCarpetLocationY
-            && playerYloc < winnersCarpetLocationY + winnersCarpetSideSize;
+        && playerXloc < winnersCarpetLocationX + winnersCarpetSideSize
+        && playerYloc >= winnersCarpetLocationY
+        && playerYloc < winnersCarpetLocationY + winnersCarpetSideSize;
   }
 }
