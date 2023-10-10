@@ -36,13 +36,13 @@ public class Main {
 
   private static void initializeValues() {
     Scanner input = new Scanner(System.in);
-    System.out.println("WELCOME \n" + "enter A player X location");
+    System.out.println("WELCOME \n" + "enter " + PLAYER_1_NAME + " player X location");
     playerALocationX = input.nextInt();
-    System.out.println("enter A player Y location");
+    System.out.println("enter " + PLAYER_1_NAME + " player Y location");
     playerALocationY = input.nextInt();
-    System.out.println("enter B player X location");
+    System.out.println("enter " + PLAYER_2_NAME + " player X location");
     playerBLocationX = input.nextInt();
-    System.out.println("enter B player Y location");
+    System.out.println("enter " + PLAYER_2_NAME + " player Y location");
     playerBLocationY = input.nextInt();
     System.out.println("enter WINNERS CARPET top left location");
     winnersCarpetLocationX = input.nextInt();
@@ -50,6 +50,7 @@ public class Main {
     System.out.println("enter WINNERS CARPET size");
     winnersCarpetSideSize = input.nextInt();
   }
+
 
   private static void printBoard() {
     for (int row = 0; row < BOARD_SIZE + 2; row++) {
@@ -78,7 +79,7 @@ public class Main {
 
   //Help function to know which player is and return his x location
   private static int xLocationByPlayer(String player) {
-    if (player == PLAYER_1_NAME) {
+    if (player.equals(PLAYER_1_NAME)) {
       return playerALocationX;
     }
 
@@ -87,7 +88,7 @@ public class Main {
 
   //Help function to know which player is and return his y location
   private static int yLocationByPlayer(String player) {
-    if (player == PLAYER_1_NAME) {
+    if (player.equals(PLAYER_1_NAME)) {
       return playerALocationY;
     }
 
@@ -115,9 +116,8 @@ public class Main {
   private static int getMoveDirection(String player) {
     System.out.println("player " + player + "'s move \n" + "1-up 2-down 3-right 4-left");
     Scanner input = new Scanner(System.in);
-    int choose = input.nextInt();
 
-    return choose;
+    return input.nextInt();
   }
 
   private static boolean isMovingTowardsBorder(int playerXloc, int playerYloc, int playerMovement) {
@@ -161,7 +161,7 @@ public class Main {
     final int RIGHT = 3;
     final int LEFT = 4;
 
-    if (player == PLAYER_1_NAME) {
+    if (player.equals(PLAYER_1_NAME)) {
       switch (playerMovement) {
         case UP -> playerALocationX--;
         case DOWN -> playerALocationX++;
@@ -179,14 +179,9 @@ public class Main {
   }
 
   private static boolean didPlayerWin(int playerXloc, int playerYloc) {
-    if (playerXloc >= winnersCarpetLocationX
-        && playerXloc < winnersCarpetLocationX + winnersCarpetSideSize
-        && playerYloc >= winnersCarpetLocationY
-        && playerYloc < winnersCarpetLocationY + winnersCarpetSideSize) {
-
-      return true;
-    }
-
-    return false;
+    return playerXloc >= winnersCarpetLocationX
+            && playerXloc < winnersCarpetLocationX + winnersCarpetSideSize
+            && playerYloc >= winnersCarpetLocationY
+            && playerYloc < winnersCarpetLocationY + winnersCarpetSideSize;
   }
 }
